@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="static/style5.css">
+		<title>模型训练</title>
+	</head>		
+	<body>
+		<h1>模型训练</h1>
+
+		<form name="wer" action="/train" method="post">
+			<div id="d1">请输入模型代码:			
+				<label><input type="radio" name = "mode" class = "test" id = "re1" value = "aauto" checked="checked"></input></label><span class = "span-style">默认</span>
+				<label><input type="radio" name = "mode" class = "test" id = "re2" value = "sself" ></input> </label><span class = "span-style">自定义</span>
+			</div>
+			<textarea id="t1" placeholder="请输入代码" name="train_model" type="text">{{ train_code }}</textarea>
+			<input type="submit" value="识别" id="sub">			
+			<p id="p1">准确率:	{{Accuracy}}</p>
+			<div id="d2">
+				<p>参数解释：</p>
+				<p>vocab_size:	字典中的单词数</p>
+				<p>label_size:	为NER标注的分类数,目前为9</p>
+				<p>input_shape:	输入维度，60</p>
+				<p>output_dim:	输出维度，20</p>
+				<p>n_units:	隐藏神经元个数，10</p>
+			</div>
+			<input type="button" value="回到主页" onclick="window.location.href = 'http://127.0.0.1:5000/'" id="back" />
+
+		</form>
+
+
+	</body>
+</html>

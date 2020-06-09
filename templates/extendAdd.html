@@ -1,0 +1,19 @@
+{% extends "add.html" %}
+{% block body %}
+
+	<form name="wer" action="/add" method="post">
+		<textarea id="t1" placeholder="请输入语句" name="add_word" type="text"></textarea>
+		<textarea id="t2" placeholder="转换结果,请自己标记人名,组织名..." name="word_res" type="text">{{word_res}}</textarea>
+		<input type="submit" value="转换" id="sub">
+		<input type="submit" value="加入" id="insert">
+		<div id="d2">
+			<p>tips：</p>
+			<p>在O处自己标注PER(人名),ORG(组织名),LOC(地点名),MISC(专有名词),B为开始，I为中间或者结束</p>
+			<p>如: New   York   </p>
+			<p>    B-LOC I-LOC</p>
+		</div>
+	</form>
+	<input type="button" value="回到主页" style="border-radius:50%;border: none" onclick="window.location.href = 'http://127.0.0.1:5000/'" id="back" />
+
+
+{% endblock %}

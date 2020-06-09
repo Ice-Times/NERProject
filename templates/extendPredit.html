@@ -1,0 +1,21 @@
+{% extends "predit.html" %}
+{% block body %}
+
+<form name="wer" action="/predit" method="post">
+    <textarea id="t1" placeholder="请输入需要识别的文本:" name="word" type="text"></textarea>
+	<input type="submit" value="识别" id="sub">
+	<textarea id="t2" placeholder="识别结果:" readonly>{{ output }}</textarea>
+	<button type="button" onclick="window.location.href = 'http://127.0.0.1:5000/download'" id="btdownload">下载结果</button>
+	<div id="v1">词性还原
+		<label><input type="radio" name = "Re" class = "test" id = "re1" value = "Yes"></input></label><span class = "span-style">是</span>
+		<label><input type="radio" name = "Re" class = "test" id = "re2" value = "No" checked="checked"></input> </label><span class = "span-style">否</span>
+		
+		
+	</div>
+
+</form>
+<input type="button" value="回到主页" style="border-radius:50%;border: none" onclick="window.location.href = 'http://127.0.0.1:5000/'" id="back" />
+
+
+
+{% endblock %}
