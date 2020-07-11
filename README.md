@@ -12,15 +12,15 @@ keras 2.3.1
 ## 效果
 |             主页面             |           添加训练集页面           |
 | :------------------------------: | :------------------------------: |
-| ![page1](IMG/index.png) | ![page2](IMG/add.png) |
+| ![IMG/index.png](IMG/index.png) | ![IMG/add.png](IMG/add.png) |
 
 |             训练模型页面             |           识别页面           |
 | :------------------------------: | :------------------------------: |
-| ![page1](IMG/train.png) | ![page2](IMG/predit.png) |
+| ![IMG/train.png](IMG/train.png) | ![IMG/predit.png](IMG/predit.png) |
 
 |             下载页面           |  
 | :------------------------------: | 
-| ![page1](IMG/download.png) | 
+| ![IMG/dpwnload.png](IMG/download.png) | 
 
 演示视频：<https://www.bilibili.com/video/BV13A411B7p3/>
 
